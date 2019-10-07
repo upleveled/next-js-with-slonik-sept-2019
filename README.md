@@ -17,11 +17,17 @@ You'll need PostgreSQL for this.
 
 Install PostgreSQL with [Chocolatey](https://chocolatey.org/):
 
+**Note:** The following command should be run in **an administrative prompt** (right-click on Hyper or whatever Terminal you use and click on "Run as Administrator").
+
 ```sh
-choco install postgresql --params '/Password:postgres' -y
+choco install postgresql --version=11.5 -y
 ```
 
-This will install PostgreSQL and create a default user of `postgres` with a password of `postgres`.
+This will install PostgreSQL and create a default user of `postgres`.
+
+**Important:** Pay attention during the installation - it will display the password for the `postgres` user on a yellow line starting with the word `WARNING`. Save this password for later. It will look like this:
+
+<img src="chocolatey-postgres-generated-password.png">
 
 Now let's set an environment variable to tell PostgreSQL where to find the programs and where to put the data:
 
@@ -36,7 +42,15 @@ source $USERPROFILE/.bash_profile
 
 Now everything should be ready to go! Try running `postgres` on the command line.
 
-Run the following commands to set up the database and the user:
+If this works, then we can continue setting up the user, by changing the password for the `postgres` user.
+
+When you run this next command, it will ask you for a password. Use the password that you saved from the installation earlier:
+
+```sh
+psql -U postgres -c "ALTER ROLE postgres PASSWORD 'postgres';"
+```
+
+Run the following commands to set up the database and the user (now the password will be `postgres`):
 
 ```sh
 psql -U postgres -c "CREATE DATABASE slonik;"
