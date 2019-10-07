@@ -17,10 +17,10 @@ You'll need PostgreSQL for this.
 
 Install PostgreSQL with [Chocolatey](https://chocolatey.org/):
 
-**Note:** The following command should be run in **an administrative prompt** (right-click on Hyper or whatever Terminal you use and click on "Run as Administrator").
+**Note:** The following command should be run in **an administrative prompt** (right-click on Hyper or whatever terminal you use and click on "Run as Administrator").
 
 ```sh
-choco install postgresql --version=11.5 -y
+choco install postgresql -y
 ```
 
 This will install PostgreSQL and create a default user of `postgres`.
@@ -28,6 +28,8 @@ This will install PostgreSQL and create a default user of `postgres`.
 **Important:** Pay attention during the installation - it will display the password for the `postgres` user on a yellow line starting with the word `WARNING`. Save this password for later. It will look like this:
 
 <img src="chocolatey-postgres-generated-password.png">
+
+After the installation is complete, close Hyper and reopen it (just as a normal user - not as an administrator).
 
 Now let's set an environment variable to tell PostgreSQL where to find the programs and where to put the data:
 
