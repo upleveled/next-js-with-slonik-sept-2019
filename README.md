@@ -23,22 +23,25 @@ choco install postgresql --params '/Password:postgres' -y
 
 This will install PostgreSQL and create a default user of `postgres` with a password of `postgres`.
 
-Now let's set an environment variable to tell PostgreSQL where to put the data:
+Now let's set an environment variable to tell PostgreSQL where to find the programs and where to put the data:
 
 ```sh
-echo "export PGDATA=${$(dirname $(which postgres))/bin/data}" >> %userprofile%/.bash_profile
-source %userprofile%/.bash_profile
+cd /c/
+POSTGRES_PATH=$(find . -name "psql.exe" -print -quit)
+POSTGRES_BIN_PATH=$(dirname "${POSTGRES_PATH/./\/c}")
+echo "export PATH=\$PATH:\"$POSTGRES_BIN_PATH\"" >> $USERPROFILE/.bash_profile
+echo "export PGDATA=\"${POSTGRES_BIN_PATH/bin/data}\"" >> $USERPROFILE/.bash_profile
+source $USERPROFILE/.bash_profile
 ```
 
 Now everything should be ready to go! Try running `postgres` on the command line.
 
-If it doesn't work and it complains about not being able to find `postgres`, it may be missing the proper `PATH` variable.
-
-This may help:
+Run the following commands to set up the database and the user:
 
 ```sh
-echo "export PATH=$PATH:$(dirname $(which postgres))" >> %userprofile%/.bash_profile
-source %userprofile%/.bash_profile
+psql -U postgres -c "CREATE DATABASE slonik;"
+psql -U postgres -c "CREATE USER slonik WITH ENCRYPTED PASSWORD 'slonik';"
+psql -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE slonik TO slonik;"
 ```
 
 #### macOS
@@ -59,8 +62,6 @@ source ~/.bash_profile
 ```
 
 Now everything should be ready to go! Try running `postgres` on the command line.
-
-### Database and Role Setup
 
 Run the following commands to set up the database and the user:
 
