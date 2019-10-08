@@ -16,8 +16,7 @@ const WithInitialProps: NextPage<Props> = ({ data }) => (
         <a>Go home</a>
       </Link>
     </p>
-
-    {JSON.stringify(data)}
+    <div style={{ wordBreak: 'break-all' }}>{JSON.stringify(data)}</div>
   </Layout>
 );
 
