@@ -12,6 +12,7 @@
     "@slonik/migrator": "^0.1.13",
     "@types/slonik": "^19.0.0",
     "esm": "^3.2.25",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "latest",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
