@@ -1,6 +1,7 @@
 # Next.js Slonik API Routes example
 
 - [Next.js](https://nextjs.org/)
+- TypeScript
 - [Next.js 9+ API Routes](https://nextjs.org/blog/next-9#api-routes)
 - [Slonik](https://github.com/gajus/slonik) (with [PostgreSQL](https://www.postgresql.org/))
 - [@slonik/migrator](https://www.npmjs.com/package/@slonik/migrator) for database migrations
