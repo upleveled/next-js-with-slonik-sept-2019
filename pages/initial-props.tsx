@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import fetch from 'isomorphic-unfetch';
+import fetch from 'cross-fetch';
 
 type Props = {
   data: Object;
