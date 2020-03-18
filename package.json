@@ -33,7 +33,7 @@
   },
   "license": "ISC",
   "resolutions": {
-    "**/mkdirp/minimist": "0.2.1",
+    "mkdirp": "0.5.3",
     "terser-webpack-plugin": "1.4.3"
   }
 }
