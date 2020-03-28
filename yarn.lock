@@ -863,10 +863,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/slonik@^19.0.0":
-  version "19.0.0"
-  resolved "https://registry.yarnpkg.com/@types/slonik/-/slonik-19.0.0.tgz#cc988968ec8dbbcd58a1ec623ffee793ab3925ca"
-  integrity sha512-lFQbw0zZlLQe1xAtEzVNzKgtLrqR6Z8qzn3kJ7YBUZqPL+RL6C2MY6AeRkhNoYFCn0ZxvCkP79U7FstP0eDrZA==
+"@types/slonik@^19.0.2":
+  version "19.0.2"
+  resolved "https://registry.yarnpkg.com/@types/slonik/-/slonik-19.0.2.tgz#6a9a8a75079e04874b759b4bdc7c037386f34924"
+  integrity sha512-WgKKJFg/GV4PA83dXwWYlvTjEM7ESH62Nd0xD/N315FmYBCLlerTZOAlkgLdDY/WNI3CRmUvsyRZAIMKtxYwDg==
   dependencies:
     "@types/node" "*"
 
