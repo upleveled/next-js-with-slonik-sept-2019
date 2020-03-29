@@ -21,8 +21,8 @@
     "jsonwebtoken": "^8.5.1",
     "next": "latest",
     "next-cookies": "^1.1.3",
-    "react": "^16.10.1",
-    "react-dom": "^16.10.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "slonik": "^19.0.1"
   },
   "devDependencies": {
