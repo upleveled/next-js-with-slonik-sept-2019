@@ -1108,10 +1108,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@slonik/migrator@0.3.0":
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/@slonik/migrator/-/migrator-0.3.0.tgz#a49a70adf9eb0d8d4c4573f87ebe556a22b76b8f"
-  integrity sha512-VNKv2zhuJu+KXZJxabR4kZEGlmVEESYXZtt9W1LhTA61/zwHMET7aV3bL9nGnuYmFwSEySeuHxRHXJAokkxJVg==
+"@slonik/migrator@0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@slonik/migrator/-/migrator-0.3.1.tgz#6bfa16ffd927498ccb7d886e8d34a1f2dcbace23"
+  integrity sha512-n930Fj2PEIYLjLJcTe/tgwZBdhNaAPMXTCO+KgqAfBzGB0gJT3xNvlGEBbIEUERuo1/PDp23GgQbf/Bj/GjCDw==
   dependencies:
     lodash "^4.17.15"
     slonik-sql-tag-raw "^1.0.1"
