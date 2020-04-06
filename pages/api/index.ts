@@ -1,14 +1,15 @@
+require('dotenv').config();
+
 import { NextApiRequest, NextApiResponse } from 'next';
 import { createPool, sql } from 'slonik';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import config from '../../config.js';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   const { register, username, password } = req.body;
-  const pool = createPool(config.POSTGRES_CONNECTION_STRING);
+  const pool = createPool('postgres://');
 
-  await pool.connect(async connection => {
+  await pool.connect(async (connection) => {
     let result;
 
     if (!username) {
