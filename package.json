@@ -13,8 +13,8 @@
     "@types/bcrypt": "3.0.0",
     "@types/js-cookie": "2.2.5",
     "@types/jsonwebtoken": "8.3.8",
-    "@types/slonik": "19.0.2",
-    "bcrypt": "3.0.8",
+    "@types/slonik": "22.1.2",
+    "bcrypt": "4.0.1",
     "cross-fetch": "3.0.4",
     "esm": "3.2.25",
     "js-cookie": "2.2.1",
@@ -23,7 +23,7 @@
     "next-cookies": "2.0.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "slonik": "19.8.0"
+    "slonik": "22.4.4"
   },
   "devDependencies": {
     "@types/node": "12.12.34",
