@@ -10,33 +10,18 @@
 
 You'll need PostgreSQL for this.
 
-### PostgreSQL Installation instructions
+Copy the `.env.example` file to a new file called `.env` and fill in the values described in the following table.
 
-#### Windows
+This user and database will be created by the migrations, and will be used by the Next.js application. The user will be given limited access only to the database specified:
 
-**Pre-requisite:** Git bash or other similar Bash shell.
+| Variable     | Description                                        |
+| ------------ | -------------------------------------------------- |
+| `PGHOST`     | Name of the host to connect to - often `localhost` |
+| `PGUSER`     | Database user                                      |
+| `PGPASSWORD` | Password for the database user                     |
+| `PGDATABASE` | Database that the user has access to               |
 
-Follow the instructions from [the PostgreSQL step in UpLeveled's System Setup Instructions](https://github.com/upleveled/system-setup/blob/master/windows.md#user-content-postgresql).
-
-Run the following commands to set up the database and the user (now the password will be `postgres`):
-
-```sh
-psql -U postgres -c "CREATE DATABASE slonik;"
-psql -U postgres -c "CREATE USER slonik WITH ENCRYPTED PASSWORD 'slonik';"
-psql -U postgres -c "GRANT ALL PRIVILEGES ON DATABASE slonik TO slonik;"
-```
-
-#### macOS
-
-Follow the instructions from [the PostgreSQL step in UpLeveled's System Setup Instructions](https://github.com/upleveled/system-setup/blob/master/macos.md#user-content-postgresql).
-
-Run the following commands to set up the database and the user:
-
-```sh
-psql postgres -c "CREATE DATABASE slonik;"
-psql postgres -c "CREATE USER slonik WITH ENCRYPTED PASSWORD 'slonik';"
-psql postgres -c "GRANT ALL PRIVILEGES ON DATABASE slonik TO slonik;"
-```
+In order to create this user and database, we will also need the `ADMIN` variables, which are PostgreSQL admin connection details.
 
 ### Run Migrations to Set up Tables
 
