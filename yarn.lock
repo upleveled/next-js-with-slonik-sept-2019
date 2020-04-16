@@ -1108,11 +1108,12 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@slonik/migrator@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@slonik/migrator/-/migrator-0.3.2.tgz#cc84052a8ff4ac57ae80f0f4532ee25760140d98"
-  integrity sha512-T5pirL01wWj1+UlWhCTUdAkDhJHLLw0QLfms152Js/qbY3a0V7wlZevEEYfipnDLq84r9IItUSEQHYduN9VPrQ==
+"@slonik/migrator@0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@slonik/migrator/-/migrator-0.4.0.tgz#0a15cc9c0d520dd483c4c906cdce8e9ef691f4ee"
+  integrity sha512-rOlaUZxSuG5XLfT/q3XkyH5Dlg8c2VWHwd3Aj4Ikor7x45darG+z7hgFa5rV95o4C8/wj+pjcgm219d2Yn25Ow==
   dependencies:
+    dedent "^0.7.0"
     lodash "^4.17.15"
     slonik-sql-tag-raw "^1.0.1"
     umzug "^2.3.0"
@@ -2230,6 +2231,11 @@ decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+
+dedent@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
+  integrity sha1-JJXduvbrh0q7Dhvp3yLS5aVEMmw=
 
 deep-extend@^0.6.0:
   version "0.6.0"
