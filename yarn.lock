@@ -5581,7 +5581,7 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-slonik-sql-tag-raw@^1.0.1, slonik-sql-tag-raw@^1.0.2:
+slonik-sql-tag-raw@1.0.2, slonik-sql-tag-raw@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/slonik-sql-tag-raw/-/slonik-sql-tag-raw-1.0.2.tgz#15e3ab1184e96a3f1c16ce38d4acd08f17a3767b"
   integrity sha512-wjUsnDUtUTYnxBReFVjuy35l4YO4alWJwrAMqQz04UuhPA29cRGR9VojFBLhCPxD9F9/MsjNYVWa3YTFBqhlxA==
